@@ -42,10 +42,52 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Autofac, Version=5.1.2.0, Culture=neutral, PublicKeyToken=17863af14b0044da">
+          <HintPath>..\packages\Autofac.5.1.2\lib\net461\Autofac.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Autofac.Extensions.DependencyInjection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da">
+          <HintPath>..\packages\Autofac.Extensions.DependencyInjection.6.0.0\lib\netstandard2.0\Autofac.Extensions.DependencyInjection.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="Microsoft.CSharp" />
+        <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+          <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="mscorlib" />
+        <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+          <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c">
+          <HintPath>..\packages\NLog.4.7.0\lib\net45\NLog.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System" />
+        <Reference Include="System.ComponentModel.Composition" />
         <Reference Include="System.Data" />
         <Reference Include="System.Drawing" />
+        <Reference Include="System.IO.Compression" />
+        <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Runtime.Serialization" />
+        <Reference Include="System.ServiceModel" />
+        <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Transactions" />
         <Reference Include="System.Web.DynamicData" />
         <Reference Include="System.Web.ApplicationServices" />
         <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -95,9 +137,6 @@
             <Private>True</Private>
             <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
         </Reference>
-        <Reference Include="Newtonsoft.Json">
-            <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-        </Reference>
         <Reference Include="WebGrease">
             <Private>True</Private>
             <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -116,6 +155,7 @@
         <Compile Include="App_Start\BundleConfig.cs" />
         <Compile Include="App_Start\FilterConfig.cs" />
         <Compile Include="App_Start\RouteConfig.cs" />
+        <Compile Include="Controllers\AccountController.cs" />
         <Compile Include="Controllers\HomeController.cs" />
         <Compile Include="Global.asax.cs">
             <DependentUpon>Global.asax</DependentUpon>
@@ -144,6 +184,260 @@
         <Content Include="Scripts\jquery.validate.unobtrusive.js" />
         <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
         <Content Include="Scripts\modernizr-2.8.3.js" />
+        <Content Include="StaticResource\HomeIndexResource\assets\css\fontawesome-all.min.css" />
+        <Content Include="StaticResource\HomeIndexResource\assets\css\main.css" />
+        <Content Include="StaticResource\HomeIndexResource\assets\js\breakpoints.min.js" />
+        <Content Include="StaticResource\HomeIndexResource\assets\js\browser.min.js" />
+        <Content Include="StaticResource\HomeIndexResource\assets\js\jquery.min.js" />
+        <Content Include="StaticResource\HomeIndexResource\assets\js\main.js" />
+        <Content Include="StaticResource\HomeIndexResource\assets\js\util.js" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\base\_page.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\base\_reset.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\base\_typography.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_actions.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_author.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_blurb.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_box.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_button.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_form.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_icon.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_icons.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_image.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_list.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_mini-post.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_post.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_posts.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_row.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_section.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\components\_table.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\layout\_footer.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\layout\_header.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\layout\_intro.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\layout\_main.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\layout\_menu.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\layout\_sidebar.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\layout\_wrapper.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\libs\_breakpoints.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\libs\_functions.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\libs\_html-grid.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\libs\_mixins.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\libs\_vars.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\libs\_vendor.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\sass\main.scss" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-brands-400.eot" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-brands-400.svg" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-brands-400.ttf" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-brands-400.woff" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-brands-400.woff2" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-regular-400.eot" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-regular-400.svg" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-regular-400.ttf" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-regular-400.woff" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-regular-400.woff2" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-solid-900.eot" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-solid-900.svg" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-solid-900.ttf" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-solid-900.woff" />
+        <Content Include="StaticResource\HomeIndexResource\assets\webfonts\fa-solid-900.woff2" />
+        <Content Include="StaticResource\HomeIndexResource\images\avatar.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\logo.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic01.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic02.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic03.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic04.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic05.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic06.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic07.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic08.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic09.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic10.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic11.jpg" />
+        <Content Include="StaticResource\HomeIndexResource\images\pic12.jpg" />
+        <Content Include="StaticResource\LoginResource\css\bootstrap.min.css" />
+        <Content Include="StaticResource\LoginResource\css\demo.css" />
+        <Content Include="StaticResource\LoginResource\css\now-ui-kit.css" />
+        <Content Include="StaticResource\LoginResource\fonts\nucleo-outline.eot" />
+        <Content Include="StaticResource\LoginResource\fonts\nucleo-outline.ttf" />
+        <Content Include="StaticResource\LoginResource\fonts\nucleo-outline.woff" />
+        <Content Include="StaticResource\LoginResource\fonts\nucleo-outline.woff2" />
+        <Content Include="StaticResource\LoginResource\img\apple-icon.png" />
+        <Content Include="StaticResource\LoginResource\img\avatar.jpg" />
+        <Content Include="StaticResource\LoginResource\img\bg1.jpg" />
+        <Content Include="StaticResource\LoginResource\img\bg11.jpg" />
+        <Content Include="StaticResource\LoginResource\img\bg3.jpg" />
+        <Content Include="StaticResource\LoginResource\img\bg4.jpg" />
+        <Content Include="StaticResource\LoginResource\img\bg5.jpg" />
+        <Content Include="StaticResource\LoginResource\img\bg6.jpg" />
+        <Content Include="StaticResource\LoginResource\img\bg7.jpg" />
+        <Content Include="StaticResource\LoginResource\img\bg8.jpg" />
+        <Content Include="StaticResource\LoginResource\img\blurred-image-1.jpg" />
+        <Content Include="StaticResource\LoginResource\img\creative-tim-white-slim2.png" />
+        <Content Include="StaticResource\LoginResource\img\default-avatar.png" />
+        <Content Include="StaticResource\LoginResource\img\eva.jpg" />
+        <Content Include="StaticResource\LoginResource\img\favicon.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\AD.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\AE.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\AG.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\AM.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\AR.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\AT.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\AU.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\BE.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\BF.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\BG.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\BO.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\BR.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\CA.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\CD.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\CG.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\CH.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\CL.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\CM.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\CN.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\CO.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\CZ.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\DE.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\DJ.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\DK.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\DZ.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\EE.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\EG.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\ES.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\FI.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\FR.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\GA.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\GB.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\GM.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\GT.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\HN.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\HT.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\HU.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\ID.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\IE.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\IL.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\IN.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\IQ.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\IR.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\IT.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\JM.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\JO.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\JP.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\KG.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\KN.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\KP.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\KR.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\KW.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\KZ.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\LA.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\LB.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\LC.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\LS.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\LU.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\LV.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\MG.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\MK.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\ML.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\MM.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\MT.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\MX.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\NA.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\NE.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\NG.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\NI.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\NL.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\NO.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\OM.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\PA.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\PE.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\PG.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\PK.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\PL.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\PT.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\PY.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\QA.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\RO.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\RU.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\RW.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\SA.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\SE.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\SG.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\SL.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\SN.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\SO.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\SV.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\TD.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\TJ.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\TL.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\TR.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\TZ.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\UA.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\US.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\VE.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\VN.png" />
+        <Content Include="StaticResource\LoginResource\img\flags\YE.png" />
+        <Content Include="StaticResource\LoginResource\img\header.jpg" />
+        <Content Include="StaticResource\LoginResource\img\hero-image-1.png" />
+        <Content Include="StaticResource\LoginResource\img\hero-image-2.png" />
+        <Content Include="StaticResource\LoginResource\img\hero-image-3.png" />
+        <Content Include="StaticResource\LoginResource\img\invision-white-slim.png" />
+        <Content Include="StaticResource\LoginResource\img\landing.jpg" />
+        <Content Include="StaticResource\LoginResource\img\login.jpg" />
+        <Content Include="StaticResource\LoginResource\img\logo-square.jpg" />
+        <Content Include="StaticResource\LoginResource\img\logo.png" />
+        <Content Include="StaticResource\LoginResource\img\now-logo.png" />
+        <Content Include="StaticResource\LoginResource\img\nucleo-logo.svg" />
+        <Content Include="StaticResource\LoginResource\img\profile.jpg" />
+        <Content Include="StaticResource\LoginResource\img\ryan.jpg" />
+        <Content Include="StaticResource\LoginResource\js\core\bootstrap.min.js" />
+        <Content Include="StaticResource\LoginResource\js\core\jquery.3.2.1.min.js" />
+        <Content Include="StaticResource\LoginResource\js\core\popper.min.js" />
+        <Content Include="StaticResource\LoginResource\js\now-ui-kit.js" />
+        <Content Include="StaticResource\LoginResource\js\plugins\bootstrap-datepicker.js" />
+        <Content Include="StaticResource\LoginResource\js\plugins\bootstrap-switch.js" />
+        <Content Include="StaticResource\LoginResource\js\plugins\jquery.sharrre.js" />
+        <Content Include="StaticResource\LoginResource\js\plugins\nouislider.min.js" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_badges.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_buttons.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_datepicker.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_dropdown.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_inputs.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_modals.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_navbar.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_pages.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_popovers.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_transparency.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\mixins\_vendor-prefixes.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\plugins\_plugin-bootstrap-switch.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\plugins\_plugin-datepicker.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\plugins\_plugin-nouislider.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_alerts.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_badges.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_buttons.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_cards.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_carousel.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_checkboxes-radio.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_dropdown.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_example-pages.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_footers.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_images.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_inputs.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_misc.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_mixins.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_modals.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_navbar.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_nucleo-outline.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_pagination.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_pills.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_popups.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_progress.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_responsive.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_sections.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_social-buttons.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_tabs.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_typography.scss" />
+        <Content Include="StaticResource\LoginResource\sass\now-ui-kit\_variables.scss" />
+        <Content Include="Views\Account\Login.cshtml" />
         <Content Include="Web.config" />
         <Content Include="Web.Debug.config">
             <DependentUpon>Web.config</DependentUpon>
@@ -155,8 +449,6 @@
         <Content Include="Views\_ViewStart.cshtml" />
         <Content Include="Views\Shared\Error.cshtml" />
         <Content Include="Views\Shared\_Layout.cshtml" />
-        <Content Include="Views\Home\About.cshtml" />
-        <Content Include="Views\Home\Contact.cshtml" />
         <Content Include="Views\Home\Index.cshtml" />
     </ItemGroup>
     <ItemGroup>
