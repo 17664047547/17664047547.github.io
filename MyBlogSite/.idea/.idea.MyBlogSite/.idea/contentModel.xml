@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\Administrator\.Rider2019.3\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\Administrator\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Administrator\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_MyBlogSite.1055823982.00" t="ExcludeRecursive" />
     <e p="E:\MySite\MyBlogSite" t="IncludeFlat">
       <e p="MyBlogSite" t="IncludeRecursive">
         <e p="App_Data" t="Include" />
         <e p="App_Start" t="Include">
+          <e p="AutofacConfig.cs" t="Include" />
           <e p="BundleConfig.cs" t="Include" />
           <e p="FilterConfig.cs" t="Include" />
           <e p="RouteConfig.cs" t="Include" />
@@ -381,6 +383,48 @@
         <e p="Web.config" t="Include" />
         <e p="Web.Debug.config" t="Include" />
         <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="MyBlogSite.Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Common" t="Include">
+          <e p="CacheHelper" t="Include">
+            <e p="CacheHelper.cs" t="Include" />
+          </e>
+          <e p="DBHelper" t="Include">
+            <e p="DbHelper.cs" t="Include" />
+          </e>
+        </e>
+        <e p="IDependency.cs" t="Include" />
+        <e p="Impl" t="Include" />
+        <e p="MyBlogSite.Core.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="MyBlogSite.Models" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MyBlogSite.Models.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="MyBlogSite.Repo" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MyBlogSite.Repo.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+      </e>
+      <e p="MyBlogSite.Services" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MyBlogSite.Services.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
       </e>
       <e p="MyBlogSite.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

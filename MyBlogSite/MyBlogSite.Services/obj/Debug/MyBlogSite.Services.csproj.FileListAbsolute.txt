@@ -1,0 +1,5 @@
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\MyBlogSite.Services.dll
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\MyBlogSite.Services.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Services\obj\Debug\MyBlogSite.Services.dll
+E:\MySite\MyBlogSite\MyBlogSite.Services\obj\Debug\MyBlogSite.Services.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Services\obj\Debug\MyBlogSite.Services.csprojAssemblyReference.cache

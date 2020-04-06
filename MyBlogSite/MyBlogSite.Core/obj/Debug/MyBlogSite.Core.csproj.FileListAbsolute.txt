@@ -1,0 +1,8 @@
+E:\MySite\MyBlogSite\MyBlogSite.Core\bin\Debug\MyBlogSite.Core.dll
+E:\MySite\MyBlogSite\MyBlogSite.Core\bin\Debug\MyBlogSite.Core.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Core\bin\Debug\Dapper.dll
+E:\MySite\MyBlogSite\MyBlogSite.Core\bin\Debug\Dapper.xml
+E:\MySite\MyBlogSite\MyBlogSite.Core\obj\Debug\MyBlogSite.Core.csprojAssemblyReference.cache
+E:\MySite\MyBlogSite\MyBlogSite.Core\obj\Debug\MyBlogSite.Core.csproj.CopyComplete
+E:\MySite\MyBlogSite\MyBlogSite.Core\obj\Debug\MyBlogSite.Core.dll
+E:\MySite\MyBlogSite\MyBlogSite.Core\obj\Debug\MyBlogSite.Core.pdb

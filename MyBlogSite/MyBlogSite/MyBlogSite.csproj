@@ -50,6 +50,14 @@
           <HintPath>..\packages\Autofac.Extensions.DependencyInjection.6.0.0\lib\netstandard2.0\Autofac.Extensions.DependencyInjection.dll</HintPath>
           <Private>True</Private>
         </Reference>
+        <Reference Include="Autofac.Integration.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da">
+          <HintPath>..\packages\Autofac.Mvc5.5.0.0\lib\net461\Autofac.Integration.Mvc.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Autofac.Integration.WebApi, Version=5.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da">
+          <HintPath>..\packages\Autofac.WebApi2.5.0.0\lib\net461\Autofac.Integration.WebApi.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
           <Private>True</Private>
@@ -64,8 +72,8 @@
           <Private>True</Private>
         </Reference>
         <Reference Include="mscorlib" />
-        <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
-          <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+        <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+          <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c">
@@ -77,6 +85,10 @@
         <Reference Include="System.Data" />
         <Reference Include="System.Drawing" />
         <Reference Include="System.IO.Compression" />
+        <Reference Include="System.Net.Http.Formatting, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+          <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
           <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
           <Private>True</Private>
@@ -93,6 +105,10 @@
         <Reference Include="System.ComponentModel.DataAnnotations" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data.DataSetExtensions" />
+        <Reference Include="System.Web.Http, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+          <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.0\lib\net45\System.Web.Http.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System.Xml.Linq" />
         <Reference Include="System.Web" />
         <Reference Include="System.Web.Extensions" />
@@ -152,6 +168,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="App_Start\AutofacConfig.cs" />
         <Compile Include="App_Start\BundleConfig.cs" />
         <Compile Include="App_Start\FilterConfig.cs" />
         <Compile Include="App_Start\RouteConfig.cs" />
@@ -469,6 +486,12 @@
         <None Include="packages.config" />
         <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
         <Content Include="Scripts\jquery-3.3.1.min.map" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\MyBlogSite.Core\MyBlogSite.Core.csproj">
+        <Project>{340fb911-a858-4131-8241-00e7c4740d11}</Project>
+        <Name>MyBlogSite.Core</Name>
+      </ProjectReference>
     </ItemGroup>
     <PropertyGroup>
         <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

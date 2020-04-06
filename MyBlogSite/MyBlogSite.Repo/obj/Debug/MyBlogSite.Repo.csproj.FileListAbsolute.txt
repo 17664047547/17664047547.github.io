@@ -1,0 +1,8 @@
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\MyBlogSite.Repo.dll
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\MyBlogSite.Repo.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Repo\obj\Debug\MyBlogSite.Repo.csprojAssemblyReference.cache
+E:\MySite\MyBlogSite\MyBlogSite.Repo\obj\Debug\MyBlogSite.Repo.dll
+E:\MySite\MyBlogSite\MyBlogSite.Repo\obj\Debug\MyBlogSite.Repo.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\Newtonsoft.Json.dll
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\Newtonsoft.Json.xml
+E:\MySite\MyBlogSite\MyBlogSite.Repo\obj\Debug\MyBlogSite.Repo.csproj.CopyComplete

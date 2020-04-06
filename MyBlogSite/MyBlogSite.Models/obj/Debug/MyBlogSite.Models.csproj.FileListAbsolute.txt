@@ -1,0 +1,16 @@
+E:\MySite\MyBlogSite.Models\MyBlogSite.Models\bin\Debug\MyBlogSite.Models.dll
+E:\MySite\MyBlogSite.Models\MyBlogSite.Models\bin\Debug\MyBlogSite.Models.pdb
+E:\MySite\MyBlogSite.Models\MyBlogSite.Models\obj\Debug\MyBlogSite.Models.csprojAssemblyReference.cache
+E:\MySite\MyBlogSite.Models\MyBlogSite.Models\obj\Debug\MyBlogSite.Models.dll
+E:\MySite\MyBlogSite.Models\MyBlogSite.Models\obj\Debug\MyBlogSite.Models.pdb
+E:\MySite\MyBlogSite.Models\MyBlogSite.Models\bin\Debug\Newtonsoft.Json.dll
+E:\MySite\MyBlogSite.Models\MyBlogSite.Models\bin\Debug\Newtonsoft.Json.xml
+E:\MySite\MyBlogSite.Models\MyBlogSite.Models\obj\Debug\MyBlogSite.Models.csproj.CopyComplete
+E:\MySite\MyBlogSite\MyBlogSite.Models\bin\Debug\MyBlogSite.Models.dll
+E:\MySite\MyBlogSite\MyBlogSite.Models\bin\Debug\MyBlogSite.Models.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Models\bin\Debug\Newtonsoft.Json.dll
+E:\MySite\MyBlogSite\MyBlogSite.Models\bin\Debug\Newtonsoft.Json.xml
+E:\MySite\MyBlogSite\MyBlogSite.Models\obj\Debug\MyBlogSite.Models.csprojAssemblyReference.cache
+E:\MySite\MyBlogSite\MyBlogSite.Models\obj\Debug\MyBlogSite.Models.csproj.CopyComplete
+E:\MySite\MyBlogSite\MyBlogSite.Models\obj\Debug\MyBlogSite.Models.dll
+E:\MySite\MyBlogSite\MyBlogSite.Models\obj\Debug\MyBlogSite.Models.pdb
