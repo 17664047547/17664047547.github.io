@@ -404,7 +404,17 @@
         </e>
       </e>
       <e p="MyBlogSite.Models" t="IncludeRecursive">
+        <e p="Account" t="Include">
+          <e p="AccountModel.cs" t="Include" />
+        </e>
+        <e p="Basic" t="Include">
+          <e p="UserBasicModel.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Documents" t="Include">
+          <e p="CategoryModel.cs" t="Include" />
+          <e p="DocumentsModel.cs" t="Include" />
+        </e>
         <e p="MyBlogSite.Models.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />

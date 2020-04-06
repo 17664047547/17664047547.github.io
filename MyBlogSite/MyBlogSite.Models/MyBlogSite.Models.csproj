@@ -42,6 +42,10 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Account\AccountModel.cs" />
+        <Compile Include="Basic\UserBasicModel.cs" />
+        <Compile Include="Documents\CategoryModel.cs" />
+        <Compile Include="Documents\DocumentsModel.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
