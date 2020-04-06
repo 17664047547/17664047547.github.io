@@ -46,6 +46,7 @@
         <Compile Include="Basic\UserBasicModel.cs" />
         <Compile Include="Documents\CategoryModel.cs" />
         <Compile Include="Documents\DocumentsModel.cs" />
+        <Compile Include="DTOs\PageResult.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

@@ -415,6 +415,9 @@
           <e p="CategoryModel.cs" t="Include" />
           <e p="DocumentsModel.cs" t="Include" />
         </e>
+        <e p="DTOs" t="Include">
+          <e p="PageResult.cs" t="Include" />
+        </e>
         <e p="MyBlogSite.Models.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
@@ -424,12 +427,24 @@
       </e>
       <e p="MyBlogSite.Repo" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="IAccountRepo.cs" t="Include" />
+        <e p="IDocumentsRepo.cs" t="Include" />
+        <e p="Impl" t="Include">
+          <e p="DocumentsRepo.cs" t="Include" />
+        </e>
+        <e p="IUserBasicRepo.cs" t="Include" />
         <e p="MyBlogSite.Repo.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
       </e>
       <e p="MyBlogSite.Services" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="IAccountService.cs" t="Include" />
+        <e p="IDocumentsService.cs" t="Include" />
+        <e p="Impl" t="Include">
+          <e p="DocumentsService.cs" t="Include" />
+        </e>
+        <e p="IUserBasicService.cs" t="Include" />
         <e p="MyBlogSite.Services.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Properties" t="Include">
