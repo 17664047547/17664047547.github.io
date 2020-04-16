@@ -102,3 +102,7 @@ E:\MySite\MyBlogSite\MyBlogSite\bin\System.Net.Http.Formatting.xml
 E:\MySite\MyBlogSite\MyBlogSite\bin\System.Runtime.CompilerServices.Unsafe.xml
 E:\MySite\MyBlogSite\MyBlogSite\bin\System.Threading.Tasks.Extensions.xml
 E:\MySite\MyBlogSite\MyBlogSite\bin\System.Web.Http.xml
+E:\MySite\MyBlogSite\MyBlogSite\bin\MyBlogSite.Models.dll
+E:\MySite\MyBlogSite\MyBlogSite\bin\DapperExtensions.dll
+E:\MySite\MyBlogSite\MyBlogSite\bin\MyBlogSite.Models.pdb
+E:\MySite\MyBlogSite\MyBlogSite\bin\DapperExtensions.pdb

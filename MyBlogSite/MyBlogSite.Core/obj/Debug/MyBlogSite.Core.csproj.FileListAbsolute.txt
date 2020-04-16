@@ -6,3 +6,7 @@ E:\MySite\MyBlogSite\MyBlogSite.Core\obj\Debug\MyBlogSite.Core.csprojAssemblyRef
 E:\MySite\MyBlogSite\MyBlogSite.Core\obj\Debug\MyBlogSite.Core.csproj.CopyComplete
 E:\MySite\MyBlogSite\MyBlogSite.Core\obj\Debug\MyBlogSite.Core.dll
 E:\MySite\MyBlogSite\MyBlogSite.Core\obj\Debug\MyBlogSite.Core.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Core\bin\Debug\DapperExtensions.dll
+E:\MySite\MyBlogSite\MyBlogSite.Core\bin\Debug\MyBlogSite.Models.dll
+E:\MySite\MyBlogSite\MyBlogSite.Core\bin\Debug\MyBlogSite.Models.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Core\bin\Debug\DapperExtensions.pdb

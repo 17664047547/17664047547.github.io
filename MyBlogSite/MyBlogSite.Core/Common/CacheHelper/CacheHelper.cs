@@ -79,7 +79,7 @@ namespace MyBlogSite.Core.Common.CacheHelper
         {
             try
             {
-                System.Web.Caching.Cache objCache = HttpRuntime.Cache;
+                var objCache = HttpRuntime.Cache;
                 objCache.Remove(cacheKey);
             }
             catch

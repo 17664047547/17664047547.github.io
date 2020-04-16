@@ -6,3 +6,11 @@ E:\MySite\MyBlogSite\MyBlogSite.Repo\obj\Debug\MyBlogSite.Repo.pdb
 E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\Newtonsoft.Json.dll
 E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\Newtonsoft.Json.xml
 E:\MySite\MyBlogSite\MyBlogSite.Repo\obj\Debug\MyBlogSite.Repo.csproj.CopyComplete
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\Dapper.dll
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\DapperExtensions.dll
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\MyBlogSite.Core.dll
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\MyBlogSite.Models.dll
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\MyBlogSite.Core.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\MyBlogSite.Models.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\Dapper.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Repo\bin\Debug\DapperExtensions.pdb

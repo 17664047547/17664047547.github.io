@@ -9,7 +9,7 @@ namespace MyBlogSite.Repo.Impl
     {
         public async Task<List<DocumentsModel>> GetDocumentsList()
         {
-            var sql = "select * from "
+            throw new System.NotImplementedException();
         }
 
         public async Task<DocumentsModel> GetDocumentsById(int id)

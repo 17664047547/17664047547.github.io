@@ -3,3 +3,14 @@ E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\MyBlogSite.Services.pdb
 E:\MySite\MyBlogSite\MyBlogSite.Services\obj\Debug\MyBlogSite.Services.dll
 E:\MySite\MyBlogSite\MyBlogSite.Services\obj\Debug\MyBlogSite.Services.pdb
 E:\MySite\MyBlogSite\MyBlogSite.Services\obj\Debug\MyBlogSite.Services.csprojAssemblyReference.cache
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\MyBlogSite.Core.dll
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\MyBlogSite.Models.dll
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\MyBlogSite.Repo.dll
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\Dapper.dll
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\DapperExtensions.dll
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\MyBlogSite.Core.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\MyBlogSite.Models.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\MyBlogSite.Repo.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\Dapper.xml
+E:\MySite\MyBlogSite\MyBlogSite.Services\bin\Debug\DapperExtensions.pdb
+E:\MySite\MyBlogSite\MyBlogSite.Services\obj\Debug\MyBlogSite.Services.csproj.CopyComplete

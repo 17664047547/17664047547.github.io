@@ -390,8 +390,8 @@
           <e p="CacheHelper" t="Include">
             <e p="CacheHelper.cs" t="Include" />
           </e>
-          <e p="DBHelper" t="Include">
-            <e p="DbHelper.cs" t="Include" />
+          <e p="DapperHelper" t="Include">
+            <e p="DapperHelper.cs" t="Include" />
           </e>
         </e>
         <e p="IDependency.cs" t="Include" />

@@ -11,6 +11,7 @@
         <AssemblyName>MyBlogSite.Core</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
+        <LangVersion>8</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,6 +37,11 @@
           <HintPath>..\..\MyBlogSite\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
           <Private>True</Private>
         </Reference>
+        <Reference Include="DapperExtensions, Version=1.6.3.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\DapperExtensions.1.6.3\lib\net45\DapperExtensions.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Microsoft.CSharp" />
         <Reference Include="System" />
         <Reference Include="System.Configuration" />
         <Reference Include="System.Core" />
@@ -45,7 +51,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Common\CacheHelper\CacheHelper.cs" />
-        <Compile Include="Common\DBHelper\DbHelper.cs" />
+        <Compile Include="Common\DapperHelper\DapperHelper.cs" />
         <Compile Include="IDependency.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
