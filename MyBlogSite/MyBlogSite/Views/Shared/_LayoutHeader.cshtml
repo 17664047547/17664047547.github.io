@@ -1,34 +1,30 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - 技术分享</title>
     @Styles.Render("~/StaticResource/HomeIndexResource/assets/css/main.css")
-
 </head>
-<body>
+<body class="is-preload">
 <!-- Wrapper -->
 <div id="wrapper">
     <!-- Header -->
     <header id="header">
-        <h1>@Html.ActionLink("个人技术分享", "Index", "Home")</h1>
+        <h1>@Html.ActionLink("KeepRun 首页", "Index", "Home")</h1>
         <nav class="links">
             <ul>
                 <li>
-                    <a href="#">标题1</a>
+                    <a>@Html.ActionLink("首页", "Index", "Home")</a>
                 </li>
                 <li>
-                    <a href="#">标题2</a>
+                    <a href="#">文章</a>
                 </li>
                 <li>
-                    <a href="#">标题3</a>
+                    <a>@Html.ActionLink("个人简历", "Index", "Resume")</a>
                 </li>
                 <li>
-                    <a href="#">标题4</a>
-                </li>
-                <li>
-                    <a href="#">标题5</a>
+                    <a href="#">关于</a>
                 </li>
             </ul>
         </nav>
@@ -91,13 +87,11 @@
         </ul>
     </section>
 </section>
-<div class="container body-content">
-    @RenderBody()
-    <hr/>
-    <footer>
-        <p>&copy; @DateTime.Now.2020 - Support by Khalid</p>
-    </footer>
-</div>
+
+@RenderBody()
+
+<hr/>
+
 @Scripts.Render("~/StaticResource/HomeIndexResource/assets/js/jquery.min.js")
 @Scripts.Render("~/StaticResource/HomeIndexResource/assets/js/browser.min.js")
 @Scripts.Render("~/StaticResource/HomeIndexResource/assets/js/breakpoints.min.js")

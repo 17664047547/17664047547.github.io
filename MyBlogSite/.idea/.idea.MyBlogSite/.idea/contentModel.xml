@@ -28,6 +28,7 @@
         <e p="Controllers" t="Include">
           <e p="AccountController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="ResumeController.cs" t="Include" />
         </e>
         <e p="favicon.ico" t="Include" />
         <e p="fonts" t="Include">
@@ -373,9 +374,14 @@
           </e>
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
+            <e p="Sidebar.cshtml" t="Include" />
+          </e>
+          <e p="Resume" t="Include">
+            <e p="Index.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
-            <e p="_Layout.cshtml" t="Include" />
+            <e p="_LayoutFooter.cshtml" t="Include" />
+            <e p="_LayoutHeader.cshtml" t="Include" />
             <e p="Error.cshtml" t="Include" />
           </e>
           <e p="Web.config" t="Include" />
